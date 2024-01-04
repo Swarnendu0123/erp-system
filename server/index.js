@@ -2,28 +2,28 @@ const express = require('express');
 const app = express();
 const port = 3000;
 var cors = require('cors')
+const {User} = require('./db/index.js');
 
 app.use(cors())
 
-app.use("/", (req,res, next)=>{
-const {name, pass} = req.query;
-console.log(name, pass);
-if(name === "admin" && pass === "admin"){
-   next();
-}else{
-    res.send("You are not authenticated");
-}
-})
+// app.use("/",(req, res, next)=>{
+//     if(req.headers.origin === "http://localhost:5173"){
+//         next();
+//     }else{
+//         res.json("You are not authenticated")
+//     }
+// })
 
-const sum = (a,b) => { 
-    return a+b
-};
-
-app.get('/api', (req, res) => {
-    //print ip adress
-    console.log(req.ip);
-    const {a, b} = req.query;
-    res.json({result: sum(parseInt(a), parseInt(b))});
+app.post('/signup', (req, res) => {
+    const {email, password} = req.headers;
+    //validate
+    const newUser = new User({email, password});
+    try{
+        newUser.save();
+        res.json("User created");
+    }catch(err){
+        res.json(err.message);
+    }
     }
 );
 
