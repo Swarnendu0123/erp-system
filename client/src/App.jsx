@@ -1,23 +1,23 @@
-import { useEffect, useState } from 'react'
-import './App.css'
-import { Fragment } from 'react'
+import { Route, Routes } from "react-router-dom";
+import SignUpRoute from './routes/signup.route';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import "preline/preline";
+import { IStaticMethods } from "preline/preline";
+
 
 function App() {
-
- const [data, setData] = useState({});
+  const location = useLocation();
 
   useEffect(() => {
-    fetch("http://localhost:3000/api")
-      .then((res) => res.json())
-      .then((obj) => setData(obj))
-  }, [])
+    window.HSStaticMethods.autoInit();
+  }, [location.pathname]);
 
   return (
-    <Fragment>
-      <h1> name :{data.name}</h1>
-      <h2>{data.email}</h2>
-    </Fragment>
-  )
+    <Routes>
+      <Route path="/signup" element={<SignUpRoute />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;

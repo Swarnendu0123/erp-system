@@ -1,5 +1,6 @@
+const { MONGODB_URL} = require("../env")
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/erpsystem')
+mongoose.connect(MONGODB_URL)
     .then(
         () => {
             console.log("Connected to MongoDB");
