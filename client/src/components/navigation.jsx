@@ -1,5 +1,5 @@
 import { useAuth0 } from "@auth0/auth0-react";
-
+// import { useNavigate } from "react-router-dom";
 
 const Navigation = () => {
 
@@ -11,8 +11,9 @@ const Navigation = () => {
     const handleLogOut = ()=>{
         logout()
     }
-    return (
 
+
+    return (
         <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full bg-white text-sm py-3 md:py-0 ">
             <nav class="max-w-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8" aria-label="Global">
                 <div class="relative md:flex md:items-center md:justify-between">
