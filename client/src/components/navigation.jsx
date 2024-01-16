@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const Navigation = () => {
 
-    const { user, isAuthenticated, logout , loginWithRedirect} = useAuth0();
+    const { isAuthenticated, logout , loginWithRedirect} = useAuth0();
     const navigate = useNavigate();
     
     const handleLogIn = ()=>{
