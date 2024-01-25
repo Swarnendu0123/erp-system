@@ -1,11 +1,9 @@
-﻿# Full Stack Erp-System
+﻿# College ERP System 
 
 # Developers
 - [Swarnendu Bhandari](https://github.com/Swarnendu0123)
 - [Arunima Patra](https://github.com/Arunima-A)
  
-# College ERP System Readme
-
 ## Overview
 
 Welcome to the College ERP System! This comprehensive Enterprise Resource Planning (ERP) solution is designed to streamline and enhance the administrative and academic processes within a college or educational institution. The system provides a centralized platform for managing various aspects, including student information, faculty details, course administration, and more.
