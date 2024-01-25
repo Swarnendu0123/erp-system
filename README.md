@@ -3,10 +3,13 @@
 # Developers
 - [Swarnendu Bhandari](https://github.com/Swarnendu0123)
 - [Arunima Patra](https://github.com/Arunima-A)
- 
+
 ## Overview
 
 Welcome to the College ERP System! This comprehensive Enterprise Resource Planning (ERP) solution is designed to streamline and enhance the administrative and academic processes within a college or educational institution. The system provides a centralized platform for managing various aspects, including student information, faculty details, course administration, and more.
+
+## project architecture
+[View on Eraser![](https://app.eraser.io/workspace/GWw9El3mUg21WYuvlkuk/preview?elements=Ce6UPw4KWU3m9j3DlEaO9w&type=embed)](https://app.eraser.io/workspace/GWw9El3mUg21WYuvlkuk?elements=Ce6UPw4KWU3m9j3DlEaO9w)
 
 ## Table of Contents
 
@@ -64,5 +67,4 @@ Welcome to the College ERP System! This comprehensive Enterprise Resource Planni
 
 This College ERP System is licensed under the [MIT License](LICENSE.md). Feel free to use, modify, and distribute the system according to the terms of the license.
 
-## project architecture
-[View on Eraser![](https://app.eraser.io/workspace/GWw9El3mUg21WYuvlkuk/preview?elements=Ce6UPw4KWU3m9j3DlEaO9w&type=embed)](https://app.eraser.io/workspace/GWw9El3mUg21WYuvlkuk?elements=Ce6UPw4KWU3m9j3DlEaO9w)
+
